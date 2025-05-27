@@ -21,21 +21,14 @@ public class Main {
 
                 case 2:
                     for (int position = 0; position < roadLength; position++) {
-                        // Clear screen (may not work in all IDEs)
-                        System.out.print("\033[H\033[2J");
-                        System.out.flush();
 
                         // Print road
-                        System.out.println("|---------------------------------------------------|");
-                        System.out.println("|---------------------------------------------------|");
-                        System.out.println("|---------------------------------------------------|");
-                        System.out.println("|---------------------------------------------------|");
                         System.out.println("|---------------------------------------------------|");
                         System.out.print("|");
 
                         for (int i = 0; i < roadLength; i++) {
                             if (i == position) {
-                                System.out.print("🚗");
+                                System.out.print("*");
                             } else {
                                 System.out.print("-");
                             }
