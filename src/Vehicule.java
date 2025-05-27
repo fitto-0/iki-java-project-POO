@@ -11,7 +11,7 @@ public abstract class Vehicule {
     private double position = 0.0;
 
     public Vehicule(String marque, String modele, int cylindree, double essence,
-                    double huile, double pression, int tours) {
+            double huile, double pression, int tours) {
         this.marque = marque;
         this.modele = modele;
         this.cylindree = cylindree;
@@ -25,6 +25,7 @@ public abstract class Vehicule {
     public double getPosition() {
         return position;
     }
+
     public boolean accelerer() {
         moteur.accelerer();
         return false;
